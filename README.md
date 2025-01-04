@@ -7,7 +7,7 @@ def game():
 
   while True:
     global your_score, computer_score
-    print("if you want to quit the game type 'fuck'")
+    print("if you want to quit the game type 'exit'")
     print("if you want to know you score enter 'score'")
     com=random.choice(choose)
     me=input("choose one (rock = r , paper = p , scissor = s): ")
@@ -42,7 +42,7 @@ def game():
       print("your score is: ",your_score)
       print("computer score is: ",computer_score)
       continue
-    elif me=='fuck':
+    elif me=='exit':
       print("your final score is",your_score,"and computer score is",computer_score)
       your_score = 0
       computer_score = 0
